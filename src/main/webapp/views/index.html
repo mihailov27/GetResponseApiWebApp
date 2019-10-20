@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script type="text/javascript" src="../resources/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/style/base.css">
+</head>
+<body>
+<h2>WebResponse API example - Create Contact</h2>
+<form id="create-contact-form">
+    <div class="form_row">
+        Name:&nbsp;<input type="text" name="name" id="name" required>
+    </div>
+
+    <div class="form_row">
+        E-mail:&nbsp;<input type="email" name="email" id="email" required>
+    </div>
+
+    <div class="form_row">
+        Campaign:&nbsp;<select name="campaigns" id="campaign" required>
+        <option label=""></option>
+    </select>
+    </div>
+    <br/>
+    <br/>
+    <input type="submit" value="Create">
+    <input type="button" value="Clear" id="clearBtn" >
+</form>
+<br/>
+<h2>Existing Contacts:</h2>
+<br>
+<button id="getContacts">Reload</button>
+<br>
+<div id="contactsCount"></div>
+<div id="contactsPanel"></div>
+</body>
+</html>
